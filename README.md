@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+fork and clone this repo
 
-Things you may want to cover:
+run `bundle install` to install the dependencies
 
-* Ruby version
+To install rspec and apitome and generate the needed folders and files:
+`rails g: rspec install`
+`rails g: apitome install`
 
-* System dependencies
+`rails s` to start development server
 
-* Configuration
+* Ruby version:
+
+ruby 3.0.3
+
+rails 6.1.6 https://guides.rubyonrails.org/v6.1/
+
+How to configure a rails app to run as API only: https://guides.rubyonrails.org/api_app.html
+
+* System dependencies:
+
+rspec-rails: https://rspec.info/documentation/
+
+rspec api documentation: https://github.com/zipmark/rspec_api_documentation
+
+apitome: https://www.rubydoc.info/gems/apitome/0.3.1
+
 
 * Database creation
+created using webscraper
 
-* Database initialization
+lib/deal.rb
+lib/scraper.rb
+doc/deals.json
+
 
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+run rake docs:generate
+open ./doc/api/index.html
