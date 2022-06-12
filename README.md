@@ -37,5 +37,5 @@ doc/deals.json
 
 * How to run the test suite
 
-run rake docs:generate
-open ./doc/api/index.html
+run `rake docs:generate`
+`open ./doc/api/index.html`

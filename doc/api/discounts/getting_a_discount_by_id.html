@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>API Documentation</title>
-  <meta charset="utf-8">
-  <style>
-    
+  <head>
+    <title>Discounts API</title>
+    <meta charset="utf-8">
+    <style>
+      
 body {
   font-family: Helvetica,Arial,sans-serif;
   font-size: 13px;
@@ -39,7 +39,7 @@ pre {
 
 td.required .name:after {
   float: right;
-  content: &quot;required&quot;;
+  content: "required";
   font-weight: normal;
   color: #F08080;
 }
@@ -102,26 +102,51 @@ table th, table td {
   text-align: left;
 }
 
-  </style>
-</head>
-<body>
-<div class="container">
-  <h1>API Documentation</h1>
-  
-  <div class="article">
-    <h2>Discounts</h2>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Discounts API</h1>
 
-      <p class="explanation">This is an API for discounts</p>
+        <p class="explanation">This is an API for discounts</p>
 
-    <ul>
-      <li>
-        <a href="discounts/getting_a_discount_by_id.html">Getting a discount by id</a>
-      </li>
-      <li>
-        <a href="discounts/getting_ist_of_discounts.html">Getting ist of discounts</a>
-      </li>
-    </ul>
-  </div>
-</div>
-</body>
+      <div class="article">
+        <h2>Getting a discount by id</h2>
+        <h3>GET /discounts/:id</h3>
+
+
+
+          <h3>Request</h3>
+
+            <h4>Headers</h4>
+            <pre class="request headers">Host: example.org
+Cookie: </pre>
+
+          <h4>Route</h4>
+          <pre class="request route highlight">GET /discounts/1</pre>
+
+
+
+
+            <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/json; charset=utf-8
+ETag: W/&quot;1f25060191e070cffbb4a43c8b95f7b0&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: b81dbf0e-b1c8-4838-bd1a-d2f73828abcd
+X-Runtime: 0.009228
+Content-Length: 163</pre>
+            <h4>Status</h4>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">[binary data]</pre>
+      </div>
+    </div>
+  </body>
 </html>

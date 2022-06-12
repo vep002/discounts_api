@@ -3,7 +3,7 @@ require 'rspec_api_documentation'
 require 'rspec_api_documentation/dsl'
 
 resource "Discounts" do
-    #heade
+    #header
     #header
 
     explanation "This is an API for discounts"
@@ -22,8 +22,7 @@ resource "Discounts" do
 
 
     get "/discounts/:id" do
-
-        context "when id is valid" do
+    context "when id is valid" do
         let(:id) { discount.id }
 
         example_request "Getting a discount by id" do
@@ -41,5 +40,5 @@ resource "Discounts" do
             # expect(status).to eq(404)
         end
     end
-
+end
 end
